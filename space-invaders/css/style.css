@@ -1,0 +1,165 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Press+Start+2P&family=Titillium+Web:wght@400;900&display=swap");
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* inheritable styles */
+:root {
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.785rem;
+  --red: #f83b3a;
+  --yellow: #ebdf64;
+  --green: #62de6d;
+  --pink: #db55dd;
+  --blue: #5353f1;
+  --cyan: #42e9f4;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/space-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#score {
+  color: white;
+  font-size: 2rem;
+}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 600px;
+  margin-top: 3em;
+}
+
+.game div {
+  /* border: 1px solid var(--green); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7em;
+}
+
+.red {
+  color: var(--red) !important;
+}
+.green {
+  color: var(--green);
+}
+.blue {
+  color: var(--blue);
+}
+.cyan {
+  color: var(--cyan);
+}
+.yellow {
+  color: var(--yellow);
+}
+.pink {
+  color: var(--pink);
+}
+.white {
+  color: white;
+  font-size: 1.8rem !important;
+}
+
+.fa-fire {
+  font-size: 1.2rem;
+}
+
+/* ventanas modales */
+.modal {
+  position: fixed;
+  z-index: 1000;
+  padding-top: 10em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(22, 22, 20, 0.8);
+  transition: all 0.35s ease-in;
+}
+
+.modal-content {
+  width: 80%;
+  background-color: white;
+  padding: 2em;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin: auto;
+}
+
+.modal-content p {
+  font-size: 2.8rem;
+  margin-bottom: 0.5em;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.modal-content button{
+  font-family:  "Press Start 2P", cursive;
+  background-color: var(--blue);
+  color: white;
+  padding: 0.5em;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.modal-content i{
+  font-size: 1.2em;
+  color: var(--red);
+}
+/* ocultar una ventana modal */
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* añadir breakpoints */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  /* añadir código */
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  /* añadir código */
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  /* añadir código */
+ }
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  /* añadir código */
+ }
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  /* añadir código */
+ }

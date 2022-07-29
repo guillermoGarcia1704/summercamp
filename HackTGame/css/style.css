@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Titillium+Web:wght@400;900&display=swap");
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* inheritable styles */
+
+:root {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.785rem;
+  --yellow: #ffc311;
+  --dark: #282828;
+  --text: #777;
+}
+
+/* generic styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Titillium Web", sans-serif;
+  text-transform: capitalize;
+}
+/* var(--) */
+a,
+a:visited {
+  color: var(--dark);
+}
+
+a:hover {
+  color: var(--yellow);
+}
+
+/* dispositivos más pequeños (menos de 576 píxeles) */
+
+.logo span {
+  color: var(--yellow);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  min-height: 10vh;
+}
+
+header button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--dark);
+  border-radius: 0.3rem;
+  z-index: 3;
+  cursor: pointer;
+}
+
+header button img{
+    width: 20px;
+}
+
+nav{
+    padding:1em 2em 0 1.2em;
+    background-color: var(--dark);
+    width: 70vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    right: -70vw;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border-bottom: 1px solid #eee;
+}
+.marginRight{
+    right: 0;
+}
+
+nav ul li a,
+.social a {
+color: white !important;
+text-decoration: none;
+outline: 0;
+transition: 0.3s;
+}
+
+nav ul li a:hover,
+.social a:hover {
+color:var(--yellow);
+}
+
